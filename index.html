@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Georgia Apostille & Notary | Notary Public & Apostille Services in Atlanta</title>
+<meta name="description" content="Professional notary public and apostille facilitation services in metro Atlanta. Specializing in documents for Latin America. SE HABLA ESPAÑOL. Powers of attorney, affidavits, certified copies, and more.">
+<meta name="keywords" content="apostille Atlanta, notary Atlanta, Georgia apostille, mobile notary Georgia, power of attorney Atlanta, Latin American documents, notario Atlanta">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy: #1a2744;
+  --navy-light: #243356;
+  --gold: #c9a84c;
+  --gold-light: #e8d5a0;
+  --cream: #faf8f4;
+  --white: #ffffff;
+  --text: #2c2c2c;
+  --text-light: #5a5a5a;
+  --border: #e0ddd6;
+  --sage: #7a8e7a;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--navy);
+  border-bottom: 2px solid var(--gold);
+  transition: box-shadow 0.3s;
+}
+nav.scrolled { box-shadow: 0 4px 20px rgba(0,0,0,0.3); }
+
+.nav-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px; height: 70px;
+}
+
+.nav-logo {
+  font-family: 'DM Serif Display', serif;
+  color: var(--white);
+  font-size: 20px;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+.nav-logo span { color: var(--white); }
+
+.nav-links { display: flex; gap: 32px; list-style: none; }
+.nav-links a {
+  color: rgba(255,255,255,0.8); text-decoration: none;
+  font-size: 14px; font-weight: 500; letter-spacing: 0.5px;
+  text-transform: uppercase; transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--gold); }
+
+.nav-cta {
+  background: var(--gold); color: var(--navy) !important;
+  padding: 10px 20px; border-radius: 4px;
+  font-weight: 700 !important; text-transform: uppercase !important;
+  font-size: 13px !important; letter-spacing: 1px;
+  transition: background 0.2s;
+}
+.nav-cta:hover { background: var(--gold-light); color: var(--navy) !important; }
+
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.nav-toggle span { display: block; width: 24px; height: 2px; background: var(--white); margin: 5px 0; transition: 0.3s; }
+
+.lang-switch {
+  color: var(--gold); font-size: 13px; font-weight: 600;
+  cursor: pointer; border: 1px solid var(--gold);
+  padding: 4px 12px; border-radius: 3px;
+  background: transparent; letter-spacing: 1px;
+  transition: all 0.2s;
+}
+.lang-switch:hover { background: var(--gold); color: var(--navy); }
+
+/* HERO */
+.hero {
+  min-height: 100vh; display: flex; align-items: center;
+  background: linear-gradient(160deg, var(--navy) 0%, #0f1a2e 100%);
+  position: relative; overflow: hidden;
+  padding-top: 70px;
+}
+.hero::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(201,168,76,0.08) 0%, transparent 60%);
+}
+.hero-inner {
+  max-width: 1200px; margin: 0 auto; padding: 80px 24px;
+  position: relative; z-index: 1;
+}
+.hero-badge {
+  display: inline-block;
+  background: rgba(201,168,76,0.15); color: var(--gold);
+  padding: 8px 20px; border-radius: 30px;
+  font-size: 14px; font-weight: 600;
+  letter-spacing: 2px; text-transform: uppercase;
+  margin-bottom: 32px;
+  border: 1px solid rgba(201,168,76,0.3);
+}
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(40px, 6vw, 72px);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 24px;
+  max-width: 700px;
+}
+.hero h1 em {
+  color: var(--white);
+  font-style: normal;
+}
+.hero-sub {
+  font-size: 18px; color: rgba(255,255,255,0.7);
+  max-width: 520px; margin-bottom: 40px; line-height: 1.7;
+}
+.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--gold); color: var(--navy);
+  padding: 16px 32px; border-radius: 4px;
+  font-weight: 700; font-size: 14px;
+  text-decoration: none; text-transform: uppercase;
+  letter-spacing: 1px; transition: all 0.2s;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1px solid rgba(255,255,255,0.3); color: var(--white);
+  padding: 16px 32px; border-radius: 4px;
+  font-weight: 600; font-size: 14px;
+  text-decoration: none; text-transform: uppercase;
+  letter-spacing: 1px; transition: all 0.2s;
+  background: transparent;
+}
+.btn-secondary:hover { border-color: var(--gold); color: var(--gold); }
+
+.hero-contact {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  display: flex; gap: 40px; flex-wrap: wrap;
+}
+.hero-contact-item {
+  color: rgba(255,255,255,0.6);
+  font-size: 14px;
+}
+.hero-contact-item strong {
+  display: block; color: var(--white);
+  font-size: 16px; margin-top: 4px;
+}
+.hero-contact-item a { color: var(--white); text-decoration: none; }
+.hero-contact-item a:hover { color: var(--gold); }
+
+/* SECTIONS */
+section { padding: 100px 24px; }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+
+.section-label {
+  display: inline-block;
+  font-size: 12px; font-weight: 700;
+  letter-spacing: 3px; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 16px;
+}
+.section-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: clamp(28px, 4vw, 42px);
+  margin-bottom: 20px; line-height: 1.2;
+}
+.section-subtitle {
+  font-size: 17px; color: var(--text-light);
+  max-width: 600px; line-height: 1.7; margin-bottom: 48px;
+}
+
+/* SERVICES */
+.services { background: var(--white); }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+.service-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 36px 32px;
+  transition: all 0.3s;
+}
+.service-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+.service-icon {
+  width: 48px; height: 48px;
+  background: var(--navy);
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+.service-card h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px; margin-bottom: 12px;
+}
+.service-card p {
+  font-size: 15px; color: var(--text-light); line-height: 1.7;
+}
+.service-card ul {
+  list-style: none; margin-top: 16px;
+}
+.service-card ul li {
+  font-size: 14px; color: var(--text-light);
+  padding: 6px 0; border-bottom: 1px solid var(--border);
+  padding-left: 20px; position: relative;
+}
+.service-card ul li:last-child { border-bottom: none; }
+.service-card ul li::before {
+  content: ''; position: absolute; left: 0; top: 13px;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--gold);
+}
+
+/* ABOUT */
+.about { background: var(--cream); }
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.about-photo {
+  background: var(--navy);
+  border-radius: 8px;
+  height: 400px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'DM Serif Display', serif;
+  color: var(--gold); font-size: 24px;
+  position: relative; overflow: hidden;
+}
+.about-photo::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0;
+  height: 4px; background: var(--gold);
+}
+.about-text h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 28px; margin-bottom: 20px;
+}
+.about-text p {
+  font-size: 16px; color: var(--text-light);
+  margin-bottom: 16px; line-height: 1.8;
+}
+.about-badges { display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap; }
+.about-badge {
+  background: var(--navy);
+  color: var(--gold);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* FAQ */
+.faq { background: var(--white); }
+.faq-list { max-width: 800px; }
+.faq-item {
+  border-bottom: 1px solid var(--border);
+  padding: 24px 0;
+}
+.faq-q {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex; justify-content: space-between;
+  align-items: center;
+  user-select: none;
+}
+.faq-q::after {
+  content: '+'; font-family: 'DM Sans', sans-serif;
+  font-size: 24px; color: var(--gold);
+  transition: transform 0.3s;
+  flex-shrink: 0; margin-left: 16px;
+}
+.faq-item.open .faq-q::after { content: '\2212'; }
+.faq-a {
+  max-height: 0; overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s;
+  font-size: 15px; color: var(--text-light); line-height: 1.8;
+}
+.faq-item.open .faq-a {
+  max-height: 500px;
+  padding-top: 16px;
+}
+
+/* AREAS */
+.areas { background: var(--navy); color: var(--white); }
+.areas .section-label { color: var(--gold); }
+.areas .section-subtitle { color: rgba(255,255,255,0.6); }
+.areas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.area-tag {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 14px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  transition: all 0.2s;
+}
+.area-tag:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* CONTACT */
+.contact { background: var(--cream); }
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+.contact-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.contact-card:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+.contact-card-icon {
+  font-size: 28px; margin-bottom: 16px;
+}
+.contact-card h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 20px; margin-bottom: 8px;
+}
+.contact-card p {
+  font-size: 15px; color: var(--text-light);
+  word-break: break-all; text-align: center;
+}
+.contact-card a {
+  color: var(--navy); font-weight: 600;
+  text-decoration: none; word-break: break-all;
+}
+.contact-card a:hover { color: var(--gold); }
+
+/* FOOTER */
+footer {
+  background: var(--navy);
+  border-top: 2px solid var(--gold);
+  padding: 48px 24px;
+}
+.footer-inner {
+  max-width: 1100px; margin: 0 auto;
+  text-align: center;
+}
+.footer-name {
+  font-family: 'DM Serif Display', serif;
+  color: var(--gold); font-size: 20px;
+  margin-bottom: 16px;
+}
+.footer-disclaimer {
+  font-size: 12px;
+  color: rgba(255,255,255,0.4);
+  max-width: 700px; margin: 0 auto 16px;
+  line-height: 1.7;
+}
+.footer-copy {
+  font-size: 13px;
+  color: rgba(255,255,255,0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: block; }
+  .nav-links.open {
+    display: flex; flex-direction: column;
+    position: absolute; top: 70px; left: 0; right: 0;
+    background: var(--navy);
+    padding: 24px;
+    border-bottom: 2px solid var(--gold);
+    gap: 16px;
+  }
+  .hero-contact { flex-direction: column; gap: 20px; }
+  .about-content { grid-template-columns: 1fr; gap: 32px; }
+  .about-photo { height: 250px; }
+  .hero h1 { font-size: 36px; }
+}
+
+/* SPANISH TOGGLE */
+.es { display: none !important; }
+body.spanish .en { display: none !important; }
+body.spanish .es { display: initial !important; }
+body.spanish h1.es,
+body.spanish h2.es,
+body.spanish h3.es,
+body.spanish p.es,
+body.spanish div.es,
+body.spanish span.es { display: block !important; }
+body.spanish li.es { display: list-item !important; }
+body.spanish a.es { display: inline-flex !important; }
+body.spanish strong.es { display: block !important; }
+body.spanish .faq-q.es { display: flex !important; justify-content: space-between; align-items: center; }
+body.spanish .faq-a.es { display: block !important; max-height: 0; overflow: hidden; }
+body.spanish .faq-item.open .faq-a.es { max-height: 500px; padding-top: 16px; }
+body.spanish .section-label.es { display: inline-block !important; }
+body.spanish .hero-badge.es { display: inline-block !important; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">Georgia <span>Apostille & Notary</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services" class="en">Services</a><a href="#services" class="es">Servicios</a></li>
+      <li><a href="#about" class="en">About</a><a href="#about" class="es">Nosotros</a></li>
+      <li><a href="#faq" class="en">FAQ</a><a href="#faq" class="es">Preguntas</a></li>
+      <li><a href="#areas" class="en">Areas Served</a><a href="#areas" class="es">Cobertura</a></li>
+      <li><a href="#contact" class="nav-cta en">Contact Us</a><a href="#contact" class="nav-cta es">Contacto</a></li>
+      <li><button class="lang-switch" onclick="toggleLang()">ES / EN</button></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">SE HABLA ESPAÑOL</div>
+    <h1 class="en">Notary Public & <em>Apostille Services</em> in Atlanta</h1>
+    <h1 class="es">Notario Público y <em>Servicios de Apostilla</em> en Atlanta</h1>
+    <p class="hero-sub en">Professional document preparation, notarization, and apostille facilitation for international use. Specializing in documents for Latin America.</p>
+    <p class="hero-sub es">Preparación profesional de documentos, notarización y facilitación de apostillas para uso internacional. Especializados en documentos para América Latina.</p>
+    <div class="hero-btns">
+      <a href="tel:4045007456" class="btn-primary en">Call (404) 500-7456</a>
+      <a href="tel:4045007456" class="btn-primary es">Llamar (404) 500-7456</a>
+      <a href="#contact" class="btn-secondary en">Get Started</a>
+      <a href="#contact" class="btn-secondary es">Empezar</a>
+    </div>
+    <div class="hero-contact">
+      <div class="hero-contact-item">
+        <span class="en">Phone</span><span class="es">Teléfono</span>
+        <strong><a href="tel:4045007456">(404) 500-7456</a></strong>
+      </div>
+      <div class="hero-contact-item">
+        <span>Email</span>
+        <strong><a href="mailto:ga.apostille.notary@gmail.com">ga.apostille.notary@gmail.com</a></strong>
+      </div>
+      <div class="hero-contact-item">
+        <span class="en">Service Area</span><span class="es">Área de Servicio</span>
+        <strong class="en">Metro Atlanta, Georgia</strong>
+        <strong class="es">Área Metropolitana de Atlanta, Georgia</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <span class="section-label en">What We Do</span>
+    <span class="section-label es">Nuestros Servicios</span>
+    <h2 class="section-title en">Our Services</h2>
+    <h2 class="section-title es">Nuestros Servicios</h2>
+    <p class="section-subtitle en">From notarization to apostille facilitation, we handle your documents from start to finish.</p>
+    <p class="section-subtitle es">Desde la notarización hasta la facilitación de apostillas, manejamos sus documentos de principio a fin.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">&#9998;</div>
+        <h3 class="en">Notarization Services</h3>
+        <h3 class="es">Servicios de Notarización</h3>
+        <p class="en">Georgia-commissioned Notary Public providing all standard notarial acts with fast, professional service.</p>
+        <p class="es">Notario Público comisionado en Georgia brindando todos los actos notariales estándar con servicio rápido y profesional.</p>
+        <ul>
+          <li class="en">Acknowledgments & Jurats</li><li class="es">Reconocimientos y Juramentos</li>
+          <li class="en">Affidavits & Oaths</li><li class="es">Declaraciones Juradas</li>
+          <li class="en">Powers of Attorney</li><li class="es">Poderes Notariales</li>
+          <li class="en">Deeds & Property Documents</li><li class="es">Escrituras y Documentos de Propiedad</li>
+          <li class="en">Wills & Trusts</li><li class="es">Testamentos y Fideicomisos</li>
+          <li class="en">Contracts & Agreements</li><li class="es">Contratos y Acuerdos</li>
+          <li class="en">Loan & Mortgage Signings</li><li class="es">Firmas de Préstamos e Hipotecas</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#127760;</div>
+        <h3 class="en">Apostille Facilitation</h3>
+        <h3 class="es">Facilitación de Apostillas</h3>
+        <p class="en">We handle the entire apostille process through the GSCCCA so your documents are ready for international use.</p>
+        <p class="es">Manejamos todo el proceso de apostilla a través del GSCCCA para que sus documentos estén listos para uso internacional.</p>
+        <ul>
+          <li class="en">Georgia State Apostilles</li><li class="es">Apostillas del Estado de Georgia</li>
+          <li class="en">Federal Document Authentication</li><li class="es">Autenticación de Documentos Federales</li>
+          <li class="en">Birth & Marriage Certificates</li><li class="es">Actas de Nacimiento y Matrimonio</li>
+          <li class="en">Diplomas & Transcripts</li><li class="es">Diplomas y Expedientes Académicos</li>
+          <li class="en">Court Documents</li><li class="es">Documentos Judiciales</li>
+          <li class="en">2-3 Business Day Turnaround</li><li class="es">Entrega en 2-3 Días Hábiles</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">&#128196;</div>
+        <h3 class="en">Document Preparation</h3>
+        <h3 class="es">Preparación de Documentos</h3>
+        <p class="en">We help you prepare commonly needed documents for international use, especially for Latin American countries.</p>
+        <p class="es">Le ayudamos a preparar documentos comúnmente necesarios para uso internacional, especialmente para países latinoamericanos.</p>
+        <ul>
+          <li class="en">Power of Attorney Drafting</li><li class="es">Redacción de Poderes Notariales</li>
+          <li class="en">Single-Status Affidavits</li><li class="es">Certificados de Soltería</li>
+          <li class="en">Consent for Minor Travel</li><li class="es">Autorización de Viaje para Menores</li>
+          <li class="en">Translation Certifications</li><li class="es">Certificaciones de Traducción</li>
+          <li class="en">Certified Copies</li><li class="es">Copias Certificadas</li>
+          <li class="en">Document Readiness Audits</li><li class="es">Auditorías de Documentos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="about-content">
+      <div class="about-photo">Photo Coming Soon</div>
+      <div class="about-text">
+        <span class="section-label en">About Us</span>
+        <span class="section-label es">Sobre Nosotros</span>
+        <h3 class="en">Professional. Bilingual. Reliable.</h3>
+        <h3 class="es">Profesional. Bilingüe. Confiable.</h3>
+        <p class="en">Georgia Apostille & Notary is a document authentication service based in Atlanta, Georgia. We are a commissioned Georgia Notary Public providing notarization, apostille facilitation, and document preparation services throughout the metro Atlanta area.</p>
+        <p class="es">Georgia Apostille & Notary es un servicio de autenticacion de documentos con sede en Atlanta, Georgia. Somos un Notario Público comisionado en Georgia que brinda servicios de notarizacion, facilitacion de apostillas y preparacion de documentos en toda el area metropolitana de Atlanta.</p>
+        <p class="en">We specialize in serving the Latin American community with bilingual service in English and Spanish. Whether you need a power of attorney for property in Colombia, a single-status affidavit for a marriage in Mexico, or any document apostilled for international use, we guide you through every step of the process.</p>
+        <p class="es">Nos especializamos en servir a la comunidad latinoamericana con servicio bilingüe en inglés y español. Ya sea que necesite un poder notarial para una propiedad en Colombia, un certificado de soltería para un matrimonio en México, o cualquier documento apostillado para uso internacional, lo guiamos en cada paso del proceso.</p>
+        <div class="about-badges">
+          <span class="about-badge en">Commissioned GA Notary</span><span class="about-badge es">Notario Comisionado en GA</span>
+          <span class="about-badge en">Bilingual Service</span><span class="about-badge es">Servicio Bilingüe</span>
+          <span class="about-badge en">Latin America Specialist</span><span class="about-badge es">Especialista en América Latina</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="section-inner">
+    <span class="section-label en">Common Questions</span>
+    <span class="section-label es">Preguntas Frecuentes</span>
+    <h2 class="section-title en">Frequently Asked Questions</h2>
+    <h2 class="section-title es">Preguntas Frecuentes</h2>
+    <p class="section-subtitle en">Everything you need to know about our notary and apostille services.</p>
+    <p class="section-subtitle es">Todo lo que necesita saber sobre nuestros servicios de notario y apostilla.</p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q en" onclick="toggleFaq(this)">What is an apostille and when do I need one?</div>
+        <div class="faq-q es" onclick="toggleFaq(this)">¿Qué es una apostilla y cuándo la necesito?</div>
+        <div class="faq-a en">An apostille is an official certificate issued by the state that verifies the authenticity of a public document for use in another country. If you are sending any document to a country that is a member of the 1961 Hague Apostille Convention, you will need an apostille attached to that document for it to be recognized as legitimate. Common documents that require apostilles include birth certificates, marriage certificates, powers of attorney, diplomas, and court records.</div>
+        <div class="faq-a es">Una apostilla es un certificado oficial emitido por el estado que verifica la autenticidad de un documento público para su uso en otro país. Si está enviando cualquier documento a un país miembro de la Convención de la Apostilla de La Haya de 1961, necesitará una apostilla adjunta a ese documento para que sea reconocido como legítimo. Los documentos comunes que requieren apostillas incluyen actas de nacimiento, actas de matrimonio, poderes notariales, diplomas y registros judiciales.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q en" onclick="toggleFaq(this)">Do you issue the apostille yourself?</div>
+        <div class="faq-q es" onclick="toggleFaq(this)">¿Usted emite la apostilla directamente?</div>
+        <div class="faq-a en">No. Apostilles in Georgia are issued exclusively by the Georgia Superior Court Clerks' Cooperative Authority (GSCCCA). We act as your facilitator, handling the entire submission and retrieval process on your behalf so you don't have to navigate the process, drive to the office, or worry about your documents being rejected for formatting issues.</div>
+        <div class="faq-a es">No. Las apostillas en Georgia son emitidas exclusivamente por la Autoridad Cooperativa de Secretarios de la Corte Superior de Georgia (GSCCCA). Actuamos como su facilitador, manejando todo el proceso de entrega y recolección en su nombre para que no tenga que navegar el proceso, conducir hasta la oficina o preocuparse por que sus documentos sean rechazados por problemas de formato.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q en" onclick="toggleFaq(this)">How long does the apostille process take?</div>
+        <div class="faq-q es" onclick="toggleFaq(this)">¿Cuánto tiempo toma el proceso de apostilla?</div>
+        <div class="faq-a en">Most apostilles are completed within 2-3 business days from the time we receive your documents. If your document requires notarization before apostille submission, we can typically handle both steps within the same timeframe. Rush service is available for urgent requests.</div>
+        <div class="faq-a es">La mayoría de las apostillas se completan dentro de 2 a 3 días hábiles desde el momento en que recibimos sus documentos. Si su documento requiere notarización antes de la presentación de la apostilla, generalmente podemos manejar ambos pasos dentro del mismo plazo. El servicio urgente está disponible para solicitudes urgentes.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q en" onclick="toggleFaq(this)">Does my document need to be notarized before it can be apostilled?</div>
+        <div class="faq-q es" onclick="toggleFaq(this)">¿Mi documento necesita ser notarizado antes de poder ser apostillado?</div>
+        <div class="faq-a en">It depends on the type of document. Vital records such as birth certificates, marriage certificates, death certificates, and court documents issued by Georgia state or county officials do not need to be notarized. However, most private documents such as powers of attorney, affidavits, school transcripts, and translation certifications must be notarized by a Georgia notary before they can be apostilled. We will review your documents and advise you on exactly what is needed.</div>
+        <div class="faq-a es">Depende del tipo de documento. Los registros vitales como actas de nacimiento, actas de matrimonio, actas de defunción y documentos judiciales emitidos por funcionarios del estado o condado de Georgia no necesitan ser notarizados. Sin embargo, la mayoría de los documentos privados como poderes notariales, declaraciones juradas, expedientes académicos y certificaciones de traducción deben ser notarizados por un notario de Georgia antes de poder ser apostillados. Revisaremos sus documentos y le asesoraremos sobre lo que se necesita exactamente.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q en" onclick="toggleFaq(this)">Do I need to come to you in person?</div>
+        <div class="faq-q es" onclick="toggleFaq(this)">¿Necesito ir a verlo en persona?</div>
+        <div class="faq-a en">If your documents require notarization, Georgia law requires the signer to appear in person before the notary with a valid government-issued photo ID. We offer document intake at our Atlanta location for clients inside the perimeter, and convenient meeting points along I-285 for clients in the surrounding metro area. If your documents are already notarized and only need apostille facilitation, you can mail or deliver them to us without an in-person meeting.</div>
+        <div class="faq-a es">Si sus documentos requieren notarización, la ley de Georgia requiere que el firmante comparezca en persona ante el notario con una identificación oficial con foto vigente. Ofrecemos recepción de documentos en nuestra ubicación en Atlanta para clientes dentro del perímetro, y puntos de encuentro convenientes a lo largo de la I-285 para clientes en el área metropolitana. Si sus documentos ya están notarizados y solo necesitan facilitación de apostilla, puede enviarlos por correo o entregarlos sin una reunión en persona.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q en" onclick="toggleFaq(this)">What should I bring to my appointment?</div>
+        <div class="faq-q es" onclick="toggleFaq(this)">¿Qué debo llevar a mi cita?</div>
+        <div class="faq-a en">Bring your original documents that need notarization, a valid government-issued photo ID (driver's license, passport, or state ID), and a blue or black ink pen. If your document requires a witness signature other than the notary, please bring an adult over 18 with valid identification. Do not sign your documents before your appointment as some notarizations require the signature to be made in the notary's presence.</div>
+        <div class="faq-a es">Traiga sus documentos originales que necesitan notarización, una identificación oficial con foto vigente (licencia de conducir, pasaporte o identificación estatal), y un bolígrafo de tinta azul o negra. Si su documento requiere una firma de testigo distinta al notario, traiga un adulto mayor de 18 años con identificación vigente. No firme sus documentos antes de su cita ya que algunas notarizaciones requieren que la firma se haga en presencia del notario.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q en" onclick="toggleFaq(this)">Can you help with documents going to Colombia, Mexico, or other Latin American countries?</div>
+        <div class="faq-q es" onclick="toggleFaq(this)">¿Pueden ayudar con documentos que van a Colombia, México u otros países latinoamericanos?</div>
+        <div class="faq-a en">Yes, this is our specialty. We have extensive experience preparing and processing documents for use in Colombia, Mexico, Guatemala, Honduras, El Salvador, and other Latin American countries. We understand the specific requirements that consulates and government offices in these countries expect, and we ensure your documents are prepared correctly the first time. All services are available in English and Spanish.</div>
+        <div class="faq-a es">Sí, esta es nuestra especialidad. Tenemos amplia experiencia preparando y procesando documentos para uso en Colombia, México, Guatemala, Honduras, El Salvador y otros países latinoamericanos. Entendemos los requisitos específicos que los consulados y oficinas gubernamentales en estos países esperan, y nos aseguramos de que sus documentos estén preparados correctamente la primera vez. Todos los servicios están disponibles en inglés y español.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="areas" id="areas">
+  <div class="section-inner">
+    <span class="section-label en">Coverage</span>
+    <span class="section-label es">Cobertura</span>
+    <h2 class="section-title en" style="color:var(--white)">Areas We Serve</h2>
+    <h2 class="section-title es" style="color:var(--white)">Áreas que Servimos</h2>
+    <p class="section-subtitle en">Document intake at our Atlanta location and meeting points throughout metro Atlanta.</p>
+    <p class="section-subtitle es">Recepción de documentos en nuestra ubicación en Atlanta y puntos de encuentro en toda el área metropolitana.</p>
+    <div class="areas-grid">
+      <div class="area-tag">Atlanta</div>
+      <div class="area-tag">Decatur</div>
+      <div class="area-tag">Brookhaven</div>
+      <div class="area-tag">Chamblee</div>
+      <div class="area-tag">Doraville</div>
+      <div class="area-tag">Norcross</div>
+      <div class="area-tag">Duluth</div>
+      <div class="area-tag">Lawrenceville</div>
+      <div class="area-tag">Sandy Springs</div>
+      <div class="area-tag">Dunwoody</div>
+      <div class="area-tag">Marietta</div>
+      <div class="area-tag">Smyrna</div>
+      <div class="area-tag">Tucker</div>
+      <div class="area-tag">Stone Mountain</div>
+      <div class="area-tag">Lilburn</div>
+      <div class="area-tag">Buckhead</div>
+      <div class="area-tag">Midtown</div>
+      <div class="area-tag">East Point</div>
+      <div class="area-tag">College Park</div>
+      <div class="area-tag">Kennesaw</div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <span class="section-label en">Get In Touch</span>
+    <span class="section-label es">Contáctenos</span>
+    <h2 class="section-title en">Contact Us</h2>
+    <h2 class="section-title es">Contáctenos</h2>
+    <p class="section-subtitle en">Reach out by phone, text, WhatsApp, or email. We respond within one business day.</p>
+    <p class="section-subtitle es">Comuníquese por teléfono, mensaje de texto, WhatsApp o correo electrónico. Respondemos dentro de un día hábil.</p>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-card-icon">&#128222;</div>
+        <h3 class="en">Call or Text</h3><h3 class="es">Llamar o Enviar Mensaje</h3>
+        <p><a href="tel:4045007456">(404) 500-7456</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">&#128172;</div>
+        <h3>WhatsApp</h3>
+        <p class="en"><a href="tel:4045007456">Coming Soon</a></p>
+        <p class="es"><a href="tel:4045007456">Próximamente</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">&#9993;</div>
+        <h3>Email</h3>
+        <p><a href="mailto:ga.apostille.notary@gmail.com">ga.apostille.notary@gmail.com</a></p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">&#128205;</div>
+        <h3 class="en">Service Area</h3><h3 class="es">Área de Servicio</h3>
+        <p class="en">Metro Atlanta, Georgia</p>
+        <p class="es">Área Metropolitana de Atlanta, Georgia</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-name">Georgia Apostille & Notary</div>
+    <p class="footer-disclaimer en">DISCLAIMER: Georgia Apostille & Notary is not a law firm and does not provide legal advice. We are not attorneys licensed to practice law in the State of Georgia. We provide notary public services, document preparation assistance, and apostille facilitation services. We cannot give legal advice, draft legal documents requiring attorney oversight, or represent clients in legal matters. For legal advice, please consult a licensed attorney.</p>
+    <p class="footer-disclaimer es">AVISO LEGAL: Georgia Apostille & Notary no es un bufete de abogados y no brinda asesoramiento legal. No somos abogados licenciados para ejercer la ley en el Estado de Georgia. Brindamos servicios de notario público, asistencia en la preparación de documentos y servicios de facilitación de apostillas. No podemos dar asesoramiento legal, redactar documentos legales que requieran supervisión de un abogado, ni representar a clientes en asuntos legales. Para asesoramiento legal, consulte a un abogado licenciado.</p>
+    <p class="footer-copy">&copy; 2026 Georgia Apostille & Notary. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+function toggleNav() {
+  document.getElementById('navLinks').classList.toggle('open');
+}
+function toggleLang() {
+  document.body.classList.toggle('spanish');
+}
+function toggleFaq(el) {
+  el.closest('.faq-item').classList.toggle('open');
+}
+window.addEventListener('scroll', function() {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+});
+document.querySelectorAll('.nav-links a').forEach(function(a) {
+  a.addEventListener('click', function() {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+</script>
+
+</body>
+</html>
